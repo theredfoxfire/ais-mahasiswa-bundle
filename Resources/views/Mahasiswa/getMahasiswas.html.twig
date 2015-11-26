@@ -1,0 +1,18 @@
+{% block content %}
+    <h1 class="title">{{ 'mahasiswa.list'|trans({}, 'AisMahasiswaBundle') }}</h1>
+
+    <ul id="mahasiswa-list">
+        {% for mahasiswa in mahasiswas %}
+            <li>
+                <a href="{{ path('api_1_get_mahasiswa', {'id': mahasiswa.id}) }}">{{ mahasiswa.nama }}</a>
+                {#[<a href="{{ path('api_1_edit_mahasiswas', {'id': mahasiswa.id}) }}">{{ 'mahasiswa.edit.link'|trans({}, 'AisMahasiswaBundle') }}</a>]#}
+                {#[<a href="{{ path('api_1_remove_mahasiswas', {'id': mahasiswa.id}) }}">{{ 'mahasiswa.remove.link'|trans({}, 'AisMahasiswaBundle') }}</a>]#}
+            </li>
+        {% else %}
+            <li>{{ 'mahasiswa.list.empty'|trans({}, 'AisMahasiswaBundle') }}</li>
+        {% endfor %}
+    </ul>
+    <p>
+        <a href="{{ path('api_1_new_mahasiswa') }}">{{ 'mahasiswa.new.link'|trans({}, 'AisMahasiswaBundle') }}</a>
+    </p>
+{% endblock %}

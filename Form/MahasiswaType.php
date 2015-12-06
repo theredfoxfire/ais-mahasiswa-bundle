@@ -19,6 +19,7 @@ class MahasiswaType extends AbstractType
             ->add('nama')
             ->add('nama_singkat')
             ->add('user_id')
+            ->add('daftar_id')
             ->add('email')
             ->add('phone')
             ->add('foto')

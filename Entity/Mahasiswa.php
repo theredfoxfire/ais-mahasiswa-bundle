@@ -286,5 +286,33 @@ class Mahasiswa implements MahasiswaInterface
     {
         return $this->is_delete;
     }
-}
+    /**
+     * @var integer
+     */
+    private $daftar_id;
 
+
+    /**
+     * Set daftarId
+     *
+     * @param integer $daftarId
+     *
+     * @return Mahasiswa
+     */
+    public function setDaftarId($daftarId)
+    {
+        $this->daftar_id = $daftarId;
+
+        return $this;
+    }
+
+    /**
+     * Get daftarId
+     *
+     * @return integer
+     */
+    public function getDaftarId()
+    {
+        return $this->daftar_id;
+    }
+}

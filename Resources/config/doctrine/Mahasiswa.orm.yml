@@ -13,6 +13,8 @@ Ais\MahasiswaBundle\Entity\Mahasiswa:
   nama:
    type: string
    length: 100
+  daftar_id:
+   type: integer
   nama_singkat:
    type: string
    length: 30

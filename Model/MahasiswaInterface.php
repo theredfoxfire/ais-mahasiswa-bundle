@@ -154,4 +154,20 @@ Interface MahasiswaInterface
      * @return boolean
      */
     public function getIsDelete();
+    
+    /**
+     * Set daftarId
+     *
+     * @param integer $daftarId
+     *
+     * @return Mahasiswa
+     */
+    public function setDaftarId($daftarId);
+
+    /**
+     * Get daftarId
+     *
+     * @return integer
+     */
+    public function getDaftarId();
 }

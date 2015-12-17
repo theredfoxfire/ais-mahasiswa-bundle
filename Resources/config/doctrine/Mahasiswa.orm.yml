@@ -1,6 +1,7 @@
 Ais\MahasiswaBundle\Entity\Mahasiswa:
  type: entity
  table: mahasiswa
+ repositoryClass: Ais\MahasiswaBundle\Repository\MahasiswaRepository
  id:
   id: 
    type: integer

@@ -1,5 +1,5 @@
 {
-    "name" : "Ais/MahasiswaBundle",
+    "name" : "ais/mahasiswabundle",
     "description" : "A bundle filled with Dosen",
     "type" : "symfony-bundle",
     "authors" : [{
